@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width">
+    <title>Mim & Karl's Wedding</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <div id="modal">
+      <div id="modal-container">
+        <form class="gform" method="POST" data-email="karlandmiriam@aol.com" action="https://script.google.com/macros/s/AKfycbzeSP77ScG3VAZox0bh2FZ5YtU5H-s4JhUKP76XKqcOpCYN2Yw/exec">
+        <div id="modal-header">
+          <div class="main-menu-containers"></div>
+          <div class="main-menu-containers"><h2>RSVP</h2></div>
+          <div class="main-menu-containers"><i id="modal-cross" class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+        <div class="main-content-container">
+          <div class="section-containers">
+            <div class="form-row">
+              <fieldset class="form-field-title pure-group">
+                <label for="FirstName1">First Name *</label><br>
+                <input id="FirstName1" name="FirstName1" type="text" class="form-field gform" placeholder="eg. Jane" required></input>
+              </fieldset>
+              <fieldset class="form-field-title pure-group">
+                <label for="Surname1">Last Name *</label><br>
+                <input id="Surname1" name="Surname1" type="text" class="form-field gform" placeholder="eg. Doe" required></input>
+              </fieldset>
+            </div>
+            <div class="form-row" id="add-person-button-row">
+              <a id="add-person-button"><i class="fa fa-plus-circle" aria-hidden="true"></i>RSVP for two</a>
+            </div>
+            <div class="form-row" id="person2">
+              <fieldset class="form-field-title pure-group">
+                <label for="FirstName2">First Name</label><br>
+                <input id="FirstName2" name="FirstName2" type="text" class="form-field" placeholder="eg. John"></input>
+              </fieldset>
+              <fieldset class="form-field-title pure-group">
+                <label for="Surname2">Last Name</label><br>
+                <input id="Surname2" name="Surname2" type="text" class="form-field" placeholder="eg. Doe"></input>
+              </fieldset>
+            </div>
+            <div class="form-row" id="remove-person-button-row">
+              <a id="remove-person-button"><i class="fa fa-minus-circle" aria-hidden="true"></i>RSVP for one</a>
+            </div>
+            <div class="form-row">
+              <fieldset class="form-field-title pure-group">
+                <input id="Accom" name="Accom" type="checkbox" class="check-box" checked></input>
+                <label for="Accom">I / We would love to join you at Tove Valley Cottages</label>
+              </fieldset>
+            </div>
+            <div class="form-row">
+              <fieldset class="form-field-title pure-group">
+                <label for="Email">Email Address *</label><br>
+                <input id="Email" name="Email" type="text" class="form-field" placeholder="jane.doe@email.com" required></input>
+              </fieldset>
+            </div>
+            <div class="form-row">
+              <fieldset class="form-field-title pure-group">
+                <label for="Diet">Dietary Requirements</label><br>
+                <input id="Diet" name="Diet" type="text" class="form-field" placeholder="Yes, peanuts are the worst"></input>
+              </fieldset>
+            </div>
+            <div id="modal-footer">
+              <div class="two-column-containers pure-group"><button id="modal-button-cancel" Name="Cancel" class="modal-button" value="RD">Regretfully Decline</button></div>
+              <div class="two-column-containers pure-group"><button id="modal-button-confirm" name="Attend" class="modal-button pure-button" value="HA">Happily Attend</button></div>
+            </div>
+            <div id="modal-playlist" class="spotify-playlist">
+              <label>While you're here, you can visit our Spotify playlist add any music which will get you on the dancefloor...</label><br>
+              <iframe id="modal-playlist" class="spotify-playlist" src="https://open.spotify.com/embed/playlist/4zrevTdUh3MZ0hr7vyFdyW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      </form>
+      <div id="modal-overlay"></div>
+    </div>
+
+    <div id="main-menu">
+      <!-- <div class="main-menu-containers"><svg id="burger-menu"><path d="M20.2285714,17 L3.77142857,17 C3.06171429,17 3,17.447 3,18 C3,18.553 3.06171429,19 3.77142857,19 L20.2285714,19 C20.9382857,19 21,18.553 21,18 C21,17.447 20.9382857,17 20.2285714,17 Z M20.2285714,11 L3.77142857,11 C3.06171429,11 3,11.447 3,12 C3,12.553 3.06171429,13 3.77142857,13 L20.2285714,13 C20.9382857,13 21,12.553 21,12 C21,11.447 20.9382857,11 20.2285714,11 Z M3.77142857,7 L20.2285714,7 C20.9382857,7 21,6.553 21,6 C21,5.447 20.9382857,5 20.2285714,5 L3.77142857,5 C3.06171429,5 3,5.447 3,6 C3,6.553 3.06171429,7 3.77142857,7 Z"></path></svg></div> -->
+      <div class="main-menu-containers"><div class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></div></div>
+      <div class="main-menu-containers"><h1><a class="page-title" href="index.html">MIRIAM <span id="ampersand">&</span> KARL</a></h1></div>
+      <div class="main-menu-containers"><div id="countdown"></div></div>
+    </div>
+
+    <div id="main-banner">
+      <div class="button-text-container">
+        <h3 id="venue-info">Friday 9th April 2021<br>Dodmoor House<br>Northamptonshire<br>NN7 4TA</h3>
+        <button id="RSVP-button">RSVP</button>
+      </div>
+      <img id="hero-image" src="images/CanalIllustrationPeach2.png">
+    </div>
+  <div class="main-content-container">
+    <div id="arrow-down"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></div>
+    <div class="section-containers">
+      <hr>
+      <h2 class="section-titles">THE PLAN</h2>
+      <p class="sub-title-centred">A brief overview of the weekend</p>
+      <div class="content-container">
+        <div class="plan-info-content"><h3>The Wedding<span class="h3-sub">Friday</span></h3>
+          <div class="plan-info-timings"><i class="fa fa-bus" aria-hidden="true"></i><span class="plan-time">1:15pm</span><span>Arrive</span></div>
+          <div class="plan-info-timings"><i class="fa fa-life-ring" aria-hidden="true"></i><span class="plan-time">2pm</span><span>Ceremony</span></div>
+          <div class="plan-info-timings"><i class="fa fa-microphone" aria-hidden="true"></i><span class="plan-time">3:30pm</span><span>Speeches</span></div>
+          <div class="plan-info-timings"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="plan-time">4pm</span><span>Wedding Breakfast</span></div>
+          <div class="plan-info-timings"><i class="fa fa-blind" aria-hidden="true"></i><span class="plan-time">6:30pm</span><span>First Dance</span></div>
+          <div class="plan-info-timings"><i class="fa fa-music" aria-hidden="true"></i><span class="plan-time">7pm</span><span>Band</span></div>
+          <div class="plan-info-timings"><i class="fa fa-ambulance" aria-hidden="true"></i><span class="plan-time">Midnight</span><span>Carriages</span></div>
+        </div>
+        <div class="plan-info-content"><h3>After Gathering<span class="h3-sub">Saturday</span></h3>
+          <p>One day isn’t enough with you,<br>Rather celebrate for more like two.<br>So, we would love for you to stay,<br>With us - a proper little getaway!</p>
+          <p>We would love to get as many of you together as possible for a de-brief.</p>
+          <p>The plan is to head out for a walk in the afternoon, from Tove Valley Cottages, to clear our heads befoe heading back to the cottages for food and drinks.</p>
+          <p>Anyone not staying at Tove Valley is still welcome to join, of course.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="section-containers">
+      <hr>
+      <h2 class="section-titles">ACCOMMODATION</h2>
+      <p class="sub-title-centred">The venue doesn't have accommodation on-site so here are a few options</p>
+      <div class="content-container">
+        <div class="plan-info-content"><h3>Tove Valley Cottages</h3>
+          <p>We have reserved some cottages for our wedding weekend and those of you staying will already know details.</p>
+          <p>The cottages will become the base for a re-gathering on the Saturday afternoon, with invites extended to all guests should you feel you would like a walk along the canal and drinks in the evening.</p>
+          <p>Due to a 3pm check-in, those staying at the cottages will need to be there on the Thursday evening after work, where we will be there to greet you.</p>
+          <p>The cost of this stay is £120 for the three nights, including travel to the venue and some food on the thursday evening. We will have to ask for this to be paid by 1st October 2020 (friendlier wording).</p>
+          <div id="tove-valley-map"></div>
+          <a target="_blank" href="https://www.google.com/maps/place/Tove+Valley+Farm+Cottages/@52.1204393,-0.9832647,14z/data=!4m10!3m9!1s0x0:0xd183953bbf5eb57c!5m4!1s2020-04-09!2i2!4m1!1i2!8m2!3d52.1247415!4d-0.963251">See map</a>
+        </div>
+        <div class="plan-info-content"><h3>Alternative Hotels</h3>
+          <p>If you want to stay elsewhere, we would suggest you stay near the cottages rather than the venue. That way it will be easier to join us on the Saturday.</p>
+          <p>Here are a few options:</p>
+          <ol>
+            <li class="body-list-items"><a target="_blank" href="https://www.travelodge.co.uk/hotels/185/Towcester-Silverstone-hotel?WT.tsrc=GHA_Organic&utm_campaign=GHA_Towcester%20Silverstone&utm_medium=GHA_Organic&utm_source=google">Travelodge Towcester</a><span>hello</span></li>
+            <li class="body-list-items"><a target="_blank" href="http://thegranary.woodburcote.co.uk/">The Granary Barn</a></li>
+            <li class="body-list-items"><a target="_blank" href="">Option 1</a></li>
+          </ol>
+          <p>If you would rather stay near the venue <a target="_blank" href="https://www.google.com/maps/place/Dodmoor+House/@52.2452768,-1.1174177,13.38z/data=!4m15!1m6!2m5!1sHotels!5m3!5m2!1s2020-04-09!2i2!3m7!1s0x0:0x5b02fd4a475112b7!5m2!1s2020-04-09!2i2!8m2!3d52.2418211!4d-1.085844">here is a map</a> with suggested hotels nearby.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="button-container">
+    <button id="RSVP-button-2">RSVP</button>
+    <p class="sub-title-centred">or simply send an email to <a href="mailto:karlandmiriam@aol.com?subject=RSVP%20from &body=I would love to stay at Tove Valley Cottages with you both and my dietary requirementsare...">karlandmiriam@aol.com</a></p>
+    <p class="sub-title-centred">Please say whether you would like to stay at the cottages with us and any dietary requirments you have</a></p>
+  </div>
+  <div class="main-content-container">
+    <div class="section-containers">
+      <hr>
+      <h2 class="section-titles">THE PLAYLIST</h2>
+      <p class="sub-title-centred">Check it out and add the songs which will get you on the dance floor!<br>Be warned we will  be vetting this...</p>
+      <!-- <p class="sub-title-centred">Bear in mind we will be vetting them!</p> -->
+        <!-- <div id="spotify-playlist-container"> -->
+          <iframe class="spotify-playlist" src="https://open.spotify.com/embed/playlist/4zrevTdUh3MZ0hr7vyFdyW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <!-- </div> -->
+    </div>
+  </div>
+  <div class="section-containers">
+  <hr>
+  <h2 class="section-titles" id="img-carousel-title">LOOK HOW HAPPY WE ARE</h2>
+  <!-- <p class="sub-title-centred">A brief overview of the weekend</p> -->
+  <div class="content-container">
+  </div>
+  </div>
+  <div id="img-carousel-container">
+    <img src="images/MKoslo.jpeg" class="img-carousel">
+    <img src="images/MKsmart.jpeg" class="img-carousel">
+    <img src="images/Photo 09-02-2020, 18 02 38.jpg" class="img-carousel">
+    <img src="images/MKdears.jpeg" class="img-carousel">
+    <img src="images/MKHJ.jpeg" class="img-carousel">
+    <img src="images/MKTD.jpeg" class="img-carousel">
+    <img src="images/MKwedding.jpeg" class="img-carousel">
+    <img src="images/MKNYE.jpeg" class="img-carousel">
+  </div>
+  <footer>
+    <p id="footer-content">Any questions, please just ask. I'm sure you have our number but you can also email <a href="mailto:karlandmiriam@aol.com?subject=RSVP%20from &body=I would love to stay at Tove Valley Cottages with you both and my dietary requirementsare...">karlandmiriam@aol.com</a>.</p>
+  </footer>
+
+  <script src="https://use.fontawesome.com/bb06c15f21.js"></script>
+  <script src="scripts/countdown.js"></script>
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/ToveMap.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCocXfV9G1SlwTr33Lajk8lKqqXLWkkqEA&callback=initMap"></script>
+  </body>
+</html>
