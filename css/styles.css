@@ -39,6 +39,10 @@ body {
   /* display: none; */
 }
 
+.thankyou_message {
+  display: none;
+}
+
 #modal-container {
   max-height: 80vh;
   width: 800px;
@@ -66,7 +70,7 @@ fieldset {
   /* display: flex; */
 }
 
-.form-field {
+input {
   display: flex;
   height: 40px;
   width: 100%;
@@ -81,14 +85,14 @@ fieldset {
 }
 
 .check-box {
-  /* width: 40px; */
+  width: 40px;
   /* height: 40px; */
-  background-color: #f3f6f9;
-  border: 3px solid #EBF0F4;
-  box-sizing: border-box;
-  border-radius: 6px;
-  margin: 10px 0;
-  transition: 0.4s;
+  /* background-color: #f3f6f9; */
+  /* border: 3px solid #EBF0F4; */
+  /* box-sizing: border-box; */
+  /* border-radius: 6px; */
+  /* margin: 10px 0; */
+  /* transition: 0.4s; */
 }
 
 input:hover {
