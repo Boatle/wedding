@@ -56,28 +56,21 @@
     var formData = getFormData(form);
     var data = formData.data;
 
-    // If a honeypot field is filled, assume it was done so by a spam bot.
-    if (formData.honeypot) {
-      return false;
-    }
-
     disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
-    // xhr.withCredentials = true;
+
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
+        console.log("hello")
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
-          var formElements = form.querySelector(".gform")
-          if (formElements) {
-            formElements.style.display = "none"; // hide form
-          }
-          var thankYouMessage = form.querySelector(".thankyou_message");
-          if (thankYouMessage) {
-            thankYouMessage.style.display = "flex";
-          }
+          var formElements = form.getElementById("#RSVP-form")
+          formElements.style.display = "none"; // hide form
+
+          var thankYouMessage = form.getElementById("#thankyou_message");
+          thankYouMessage.style.display = "flex";
         }
     };
     // url encode form data for sending as post data
@@ -89,10 +82,8 @@
 
   function loaded() {
     // bind to the submit event of our form
-    var forms = document.querySelectorAll("form.gform");
-    for (var i = 0; i < forms.length; i++) {
-      forms[i].addEventListener("submit", handleFormSubmit, false);
-    }
+    var form = document.getElementById("#RSVP-form");
+    form.addEventListener("submit", handleFormSubmit, false);
   };
   document.addEventListener("DOMContentLoaded", loaded, false);
 

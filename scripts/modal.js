@@ -48,10 +48,8 @@ document.getElementById('add-person-button').onclick = addPersonRow
 /// HIDE ROW CONTAINING SECOND PERSON FIELDS ///
 function hideSecondPersonRow() {
   let row = document.getElementById('person2')
-  row.style.display = ''
-  // setTimeout(function() {
-  //   row.classList.toggle('hide')
-  // })
+  row.classList.toggle('show')
+  row.style.display = 'none'
   hideMinusPersonButton()
   showAddPersonButton()
 }

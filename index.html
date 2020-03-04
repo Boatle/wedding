@@ -9,13 +9,16 @@
   <body>
 
     <!-- MODAL THANKS -->
-    <div class="thankyou_message">
-    </div>
+
 
     <!-- MODAL WITH FORM -->
     <div id="modal">
       <div id="modal-container">
-        <form class="gform" method="POST" data-email="karlandmiriam@aol.com" action="https://script.google.com/macros/s/AKfycbzeSP77ScG3VAZox0bh2FZ5YtU5H-s4JhUKP76XKqcOpCYN2Yw/exec">
+
+        <div id="thankyou_message">
+          <p>Thank you</p>
+        </div>
+        <form id="RSVP-form" class="gform" method="POST" data-email="karlandmiriam@aol.com" action="https://script.google.com/macros/s/AKfycbzeSP77ScG3VAZox0bh2FZ5YtU5H-s4JhUKP76XKqcOpCYN2Yw/exec">
         <div id="modal-header">
           <div class="main-menu-containers"></div>
           <div class="main-menu-containers"><h2>RSVP</h2></div>
@@ -68,8 +71,8 @@
               </fieldset>
             </div>
             <div id="modal-footer">
-              <div class="two-column-containers pure-group"><button id="modal-button-cancel" Name="Cancel" class="modal-button" value="RD">Regretfully Decline</button></div>
-              <div class="two-column-containers pure-group"><button id="modal-button-confirm" name="Attend" class="modal-button pure-button" value="HA">Happily Attend</button></div>
+              <div class="two-column-containers pure-group"><button id="modal-button-cancel" type='submit' name="Cancel" class="modal-button" value="RD">Regretfully Decline</button></div>
+              <div class="two-column-containers pure-group"><button id="modal-button-confirm" type='submit' name="Attend" class="modal-button pure-button" value="HA">Happily Attend</button></div>
             </div>
             <div id="modal-playlist" class="spotify-playlist">
               <label>While you're here, you can visit our Spotify playlist add any music which will get you on the dancefloor...</label><br>
@@ -166,6 +169,15 @@
           <iframe class="spotify-playlist" src="https://open.spotify.com/embed/playlist/4zrevTdUh3MZ0hr7vyFdyW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         <!-- </div> -->
     </div>
+    <div class="section-containers">
+      <div class="section-containers">
+        <hr>
+        <h2 class="section-titles">GIFTS</h2>
+        <p class="sub-title-centred">Insert soppy line about your presence here...</p>
+        <p>Your presence at our wedding is gift enough and we mean that.</p>
+        <p>If you do wish to buy us something, a contribution towards our dream honeymoon in South America would be appreciated. That goes without saying really.</p>
+      </div>
+    </div>
   </div>
   <div class="section-containers">
   <hr>
@@ -193,6 +205,6 @@
   <script src="scripts/modal.js"></script>
   <script src="scripts/ToveMap.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCocXfV9G1SlwTr33Lajk8lKqqXLWkkqEA&callback=initMap"></script>
-  <!-- <script data-cfasync="false" type="text/javascript" src="scripts/form-submission-handler.js"></script> -->
+  <script data-cfasync="false" type="text/javascript" src="scripts/form-submission-handler.js"></script>
   </body>
 </html>
