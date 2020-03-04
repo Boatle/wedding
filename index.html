@@ -14,18 +14,26 @@
     <!-- MODAL WITH FORM -->
     <div id="modal">
       <div id="modal-container">
-
-        <div id="thankyou_message">
-          <p>Thank you</p>
-        </div>
-        <form id="RSVP-form" class="gform" method="POST" data-email="karlandmiriam@aol.com" action="https://script.google.com/macros/s/AKfycbzeSP77ScG3VAZox0bh2FZ5YtU5H-s4JhUKP76XKqcOpCYN2Yw/exec">
         <div id="modal-header">
           <div class="main-menu-containers"></div>
           <div class="main-menu-containers"><h2>RSVP</h2></div>
           <div class="main-menu-containers"><i id="modal-cross" class="fa fa-times" aria-hidden="true"></i></div>
         </div>
+
+
         <div class="main-content-container">
           <div class="section-containers">
+
+            <div id="thankyou_message">
+              <p></p>
+              <p>Thank you for RSVP-ing to our wedding.</p>
+              <!-- <div id="modal-footer-thanks">
+                <button class="modal-button modal-button-cancel">Close</button>
+              </div> -->
+            </div>
+
+            <form id="RSVP-form" class="gform" method="POST" data-email="karlandmiriam@aol.com" action="https://script.google.com/macros/s/AKfycbzeSP77ScG3VAZox0bh2FZ5YtU5H-s4JhUKP76XKqcOpCYN2Yw/exec">
+
             <div class="form-row">
               <fieldset class="form-field-title pure-group">
                 <label for="FirstName1">First Name *</label><br>
@@ -71,9 +79,10 @@
               </fieldset>
             </div>
             <div id="modal-footer">
-              <div class="two-column-containers pure-group"><button id="modal-button-cancel" type='submit' name="Cancel" class="modal-button" value="RD">Regretfully Decline</button></div>
+              <div class="two-column-containers pure-group"><button id="modal-button-cancel" type='submit' name="Cancel" class="modal-button modal-button-cancel" value="RD">Regretfully Decline</button></div>
               <div class="two-column-containers pure-group"><button id="modal-button-confirm" type='submit' name="Attend" class="modal-button pure-button" value="HA">Happily Attend</button></div>
             </div>
+            </form>
             <div id="modal-playlist" class="spotify-playlist">
               <label>While you're here, you can visit our Spotify playlist add any music which will get you on the dancefloor...</label><br>
               <iframe id="modal-playlist" class="spotify-playlist" src="https://open.spotify.com/embed/playlist/4zrevTdUh3MZ0hr7vyFdyW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -83,7 +92,6 @@
 
 
       </div>
-      </form>
       <div id="modal-overlay"></div>
     </div>
 
@@ -174,7 +182,7 @@
         <hr>
         <h2 class="section-titles">GIFTS</h2>
         <p class="sub-title-centred">Insert soppy line about your presence here...</p>
-        <p>Your presence at our wedding is gift enough and we mean that.</p>
+        <p>Your presence at our wedding is gift enough and we sincerely mean that.</p>
         <p>If you do wish to buy us something, a contribution towards our dream honeymoon in South America would be appreciated. That goes without saying really.</p>
       </div>
     </div>

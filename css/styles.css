@@ -180,6 +180,10 @@ p {
   margin-left: 10px;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 a {
   color: #f57d50;
   text-decoration: none;
@@ -289,7 +293,7 @@ button:hover {
   float: right;
 }
 
-#modal-button-cancel {
+.modal-button-cancel {
   background-color: #aeb4c1;
 }
 
@@ -431,7 +435,7 @@ footer {
 }
 
 #modal-playlist {
-  min-height: 213px;
+  min-height: 396px;
 }
 
 .plan-info-timings {
@@ -715,8 +719,4 @@ and (max-width : 440px) {
   }
 
 
-}
-
-a, button {
-  cursor: pointer;
 }

@@ -66,10 +66,10 @@
         console.log("hello")
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
-          var formElements = form.getElementById("#RSVP-form")
+          var formElements = document.getElementById("RSVP-form")
           formElements.style.display = "none"; // hide form
 
-          var thankYouMessage = form.getElementById("#thankyou_message");
+          var thankYouMessage = document.getElementById("thankyou_message");
           thankYouMessage.style.display = "flex";
         }
     };
@@ -82,7 +82,7 @@
 
   function loaded() {
     // bind to the submit event of our form
-    var form = document.getElementById("#RSVP-form");
+    var form = document.getElementById("RSVP-form");
     form.addEventListener("submit", handleFormSubmit, false);
   };
   document.addEventListener("DOMContentLoaded", loaded, false);
