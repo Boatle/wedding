@@ -259,7 +259,7 @@ hr {
 
 .sub-title-centred {
   text-align: center;
-  color: #aeb4c1;
+  color: #8f94a0;
 }
 
 button {
@@ -294,7 +294,7 @@ button:hover {
 }
 
 .modal-button-cancel {
-  background-color: #aeb4c1;
+  background-color: #8f94a0;
 }
 
 #modal-button-cancel:hover {
@@ -461,6 +461,10 @@ footer {
   margin: 0 10px;
 }
 
+.tove-dodmoor-maps {
+  width: 100%;
+}
+
 #countdown {
   color: #f57d50;
   font-size: 20px;
@@ -549,26 +553,26 @@ footer {
 
 .fa-microphone.fa {
   font-size: 30px;
-  /* color: #aeb4c1; */
+
   color: #f2a587;
 }
 
 .fa-blind.fa {
   font-size: 30px;
-  /* color: #aeb4c1; */
+
   color: #f2a587;
 }
 
 .fa-music.fa {
   font-size: 26px;
-  /* color: #aeb4c1; */
+
   color: #f2a587;
 }
 
 .fa-ambulance.fa {
   transform: scaleX(-1);
   font-size: 28px;
-  /* color: #aeb4c1; */
+
   color: #f2a587;
 }
 
@@ -644,7 +648,7 @@ and (max-width : 900px) {
   }
 
   .plan-info-content:first-child {
-    margin: 60px 0 0 0;
+    margin: 0;
   }
 
   .spotify-playlist {
