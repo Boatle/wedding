@@ -55,7 +55,6 @@
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
-
     disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
@@ -63,7 +62,6 @@
 
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
-        console.log("hello")
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
           var formElements = document.getElementById("RSVP-form")

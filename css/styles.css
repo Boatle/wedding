@@ -82,6 +82,9 @@ input {
   text-indent: 12px;
   transition: 0.4s;
   font-weight: 200;
+  /* -webkit-appearance: none; */
+  /* box-shadow: none !important; */
+  webkit
 }
 
 .check-box {
@@ -358,8 +361,8 @@ footer {
 }
 
 #modal-footer {
-  display: flex;flex-wrap: nowrap;
-  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
   margin: 40px 0;
 }
 
@@ -463,6 +466,7 @@ footer {
 
 .tove-dodmoor-maps {
   width: 100%;
+  max-width: 90vw;
 }
 
 #countdown {
@@ -651,6 +655,10 @@ and (max-width : 900px) {
     margin: 0;
   }
 
+  .tove-dodmoor-maps {
+    max-width: 90vw;
+  }
+
   .spotify-playlist {
     width: 100%;
   }
@@ -676,10 +684,6 @@ and (max-width : 750px) {
 
   .two-column-containers {
     width: 100%;
-  }
-
-  #modal-footer {
-    margin: 100px 0 40px 0;
   }
 
   .modal-button {
