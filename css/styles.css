@@ -283,6 +283,11 @@ button:hover {
   box-shadow: 0 2px 20px rgba(26, 25, 52, 0.15);
 }
 
+/* button:disabled {
+  opacity: 0.5;
+  display: none;
+} */
+
 #RSVP-button {
   margin: 20px;
 }
@@ -301,7 +306,7 @@ button:hover {
 }
 
 #modal-button-cancel:hover {
-  background-color: #8a8e9a;
+  background-color: #555865;
 }
 
 footer {

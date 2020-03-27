@@ -1,60 +1,24 @@
 (function() {
   // get all data in form and return object
   function getFormData(form) {
-    var elements = form.elements;
-    var honeypot;
-
-    var fields = Object.keys(elements).filter(function(k) {
-      if (elements[k].name === "honeypot") {
-        honeypot = elements[k].value;
-        return false;
+    var formData = Object.values(form).reduce((obj,field) => {
+      if(field.name) {
+        obj[field.name] = field.value;
       }
-      return true;
-    }).map(function(k) {
-      if(elements[k].name !== undefined) {
-        return elements[k].name;
-      // special case for Edge's html collection
-      }else if(elements[k].length > 0){
-        return elements[k].item(0).name;
-      }
-    }).filter(function(item, pos, self) {
-      return self.indexOf(item) == pos && item;
-    });
+      return obj
+    }, {})
 
-    var formData = {};
-    fields.forEach(function(name){
-      var element = elements[name];
+    formData.formGoogleSheetName = "responses"; // default sheet name
+    formData.formGoogleSendEmail = "karlandmiriam@aol.com"
 
-      // singular form elements just have one value
-      formData[name] = element.value;
-
-      // when our element has multiple items, get their values
-      if (element.length) {
-        var data = [];
-        for (var i = 0; i < element.length; i++) {
-          var item = element.item(i);
-          if (item.checked || item.selected) {
-            data.push(item.value);
-          }
-        }
-        formData[name] = data.join(', ');
-      }
-    });
-
-    // add form-specific values into the data
-    formData.formDataNameOrder = JSON.stringify(fields);
-    formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
-    formData.formGoogleSendEmail
-      = form.dataset.email || ""; // no email by default
-
-    return {data: formData, honeypot: honeypot};
+    return {data: formData};
   }
 
-  function handleFormSubmit(event) {  // handles form submit without any jquery
-    event.preventDefault();           // we are submitting via xhr below
-    var form = event.target;
+  function handleFormSubmit(buttonValue) {  // handles form submit without any jquery
+    var form = document.getElementById("RSVP-form");
     var formData = getFormData(form);
     var data = formData.data;
+    data.response = buttonValue;
     disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
@@ -77,11 +41,18 @@
     }).join('&');
     xhr.send(encoded);
   }
-
+  function handleButtonClick(event) {
+    event.preventDefault();
+    var value = event.target.value
+    handleFormSubmit(value)
+  }
   function loaded() {
     // bind to the submit event of our form
-    var form = document.getElementById("RSVP-form");
-    form.addEventListener("submit", handleFormSubmit, false);
+    var attendbutton = document.getElementById("modal-button-confirm")
+    attendbutton.addEventListener("click", handleButtonClick, false)
+
+    var attendbutton = document.getElementById("modal-button-cancel")
+    attendbutton.addEventListener("click", handleButtonClick, false)
   };
   document.addEventListener("DOMContentLoaded", loaded, false);
 
