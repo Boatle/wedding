@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width">
     <title>Mim & Karl's Wedding</title>
+    <script src="https://use.fontawesome.com/bb06c15f21.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -61,9 +62,9 @@
               <a id="remove-person-button"><i class="fa fa-minus-circle" aria-hidden="true"></i>RSVP for one</a>
             </div>
             <div class="form-row">
-              <fieldset class="form-field-title pure-group">
-                <input id="Accom" name="Accom" type="checkbox" class="check-box" checked></input>
-                <label for="Accom">I / We would love to join you at Tove Valley Cottages</label>
+              <fieldset class="form-field-title check-box-container">
+                <input id="accom" name="Accom" type="checkbox" checked></input>
+                <label class="checkbox-label" for="accom">I / We would love to join you at Tove Valley Cottages</label>
               </fieldset>
             </div>
             <div class="form-row">
@@ -79,12 +80,12 @@
               </fieldset>
             </div>
             <div id="modal-footer">
-              <div class="two-column-containers pure-group"><button id="modal-button-cancel" class="modal-button modal-button-cancel" value="RD">Regretfully Decline</button></div>
+              <div class="two-column-containers pure-group"><button id="modal-button-cancel" class="modal-button modal-button-cancel" value="RD">Sadly Decline</button></div>
               <div class="two-column-containers pure-group"><button id="modal-button-confirm" class="modal-button pure-button" value="HA">Happily Attend</button></div>
             </div>
             </form>
             <div id="modal-playlist" class="spotify-playlist">
-              <label>While you're here, you can visit our Spotify playlist add any music which will get you on the dancefloor...</label><br>
+              <label>While you're here, you can visit our Spotify playlist and add any music which will get you on the dancefloor.</label><br>
               <iframe id="modal-playlist" class="spotify-playlist" src="https://open.spotify.com/embed/playlist/4zrevTdUh3MZ0hr7vyFdyW" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
           </div>
@@ -114,21 +115,21 @@
     <div class="section-containers">
       <hr>
       <h2 class="section-titles">THE PLAN</h2>
-      <p class="sub-title-centred">A brief overview of the weekend</p>
+      <p class="sub-title-centred">One day isn’t enough with you,<br>Rather celebrate for more like two.<br>So, we would love for you to stay,<br>With us - a proper little getaway!</p>
       <div class="content-container">
         <div class="plan-info-content"><h3>The Wedding<span class="h3-sub">Friday</span></h3>
-          <div class="plan-info-timings"><i class="fa fa-bus" aria-hidden="true"></i><span class="plan-time">1:15pm</span><span>Arrive</span></div>
-          <div class="plan-info-timings"><i class="fa fa-life-ring" aria-hidden="true"></i><span class="plan-time">2pm</span><span>Ceremony</span></div>
-          <div class="plan-info-timings"><i class="fa fa-microphone" aria-hidden="true"></i><span class="plan-time">3:30pm</span><span>Speeches</span></div>
-          <div class="plan-info-timings"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="plan-time">4pm</span><span>Wedding Breakfast</span></div>
-          <div class="plan-info-timings"><i class="fa fa-blind" aria-hidden="true"></i><span class="plan-time">6:30pm</span><span>First Dance</span></div>
-          <div class="plan-info-timings"><i class="fa fa-music" aria-hidden="true"></i><span class="plan-time">7pm</span><span>Band</span></div>
-          <div class="plan-info-timings"><i class="fa fa-ambulance" aria-hidden="true"></i><span class="plan-time">Midnight</span><span>Carriages</span></div>
+          <div class="plan-info-timings"><i class="fa fa-bus service-icons" aria-hidden="true"></i><span class="plan-time">1:15pm</span><span>Arrive</span></div>
+          <div class="plan-info-timings"><i class="fa fa-life-ring service-icons" aria-hidden="true"></i><span class="plan-time">2pm</span><span>Ceremony</span></div>
+          <div class="plan-info-timings"><i class="fa fa-microphone service-icons" aria-hidden="true"></i><span class="plan-time">3:30pm</span><span>Speeches</span></div>
+          <div class="plan-info-timings"><i class="fa fa-cutlery service-icons" aria-hidden="true"></i><span class="plan-time">4pm</span><span>Wedding Breakfast</span></div>
+          <div class="plan-info-timings"><i class="fa fa-blind service-icons" aria-hidden="true"></i><span class="plan-time">6:30pm</span><span>First Dance</span></div>
+          <div class="plan-info-timings"><i class="fa fa-music service-icons" aria-hidden="true"></i><span class="plan-time">7pm</span><span>Band</span></div>
+          <div class="plan-info-timings"><i class="fa fa-ambulance service-icons" aria-hidden="true"></i><span class="plan-time">Midnight</span><span>Carriages</span></div>
         </div>
-        <div class="plan-info-content"><h3>After Gathering<span class="h3-sub">Saturday</span></h3>
-          <p>One day isn’t enough with you,<br>Rather celebrate for more like two.<br>So, we would love for you to stay,<br>With us - a proper little getaway!</p>
-          <p>We would love to get as many of you together as possible for a de-brief.</p>
-          <p>The plan is to head out for a walk in the afternoon, from Tove Valley Cottages, to clear our heads befoe heading back to the cottages for food and drinks.</p>
+        <div class="plan-info-content"><h3>Before<span class="h3-sub">Thursday</span></h3>
+          <p>Feel free to join us the evening before for some food from 6pm at Tove Valley Cottages.</p>
+          <h3>After<span class="h3-sub">Saturday</span></h3>
+          <p>The cottages will become the base for a regathering on the Saturday afternoon, with invites extended to all guests should you feel you would like a walk along the canal and drinks in the evening.</p>
           <p>Anyone not staying at Tove Valley is still welcome to join, of course.</p>
         </div>
       </div>
@@ -140,21 +141,21 @@
       <p class="sub-title-centred">The venue doesn't have accommodation on-site so here are a few options</p>
       <div class="content-container">
         <div class="plan-info-content"><h3>Tove Valley Cottages</h3>
-          <p>We have reserved some cottages for our wedding weekend and those of you staying will already know details.</p>
-          <p>The cottages will become the base for a re-gathering on the Saturday afternoon, with invites extended to all guests should you feel you would like a walk along the canal and drinks in the evening.</p>
-          <p>Due to a 3pm check-in, those staying at the cottages will need to be there on the Thursday evening after work, where we will be there to greet you.</p>
-          <p>The cost of this stay is £120 for the three nights, including travel to the venue and some food on the Thursday evening. We will have to ask for this to be paid by 1st October 2020 (friendlier wording).</p>
+          <p>We have reserved a limited number of cottages for our wedding weekend and those of you staying will already know the details.</p>
+          <p>Arrival is anytime from 6pm, where we will be there to greet you.</p>
+          <p>The cost of this stay is £120pp for the three nights, including travel to the venue. We will have to ask for this to be paid by 1st October 2020 (friendlier wording).</p>
           <div id="tove-valley-map"></div>
           <a target="_blank" href="https://www.google.com/maps/place/Tove+Valley+Farm+Cottages/@52.1204393,-0.9832647,14z/data=!4m10!3m9!1s0x0:0xd183953bbf5eb57c!5m4!1s2020-04-09!2i2!4m1!1i2!8m2!3d52.1247415!4d-0.963251">View in Google Maps</a>
+          <h3 id="h3-second">Alternative Hotels</h3>
+            <p>If you are staying elsewhere, we would suggest you stay near the cottages rather than the venue. That way it will be easier to join us on the Saturday.</p>
+            <p>To view alternative options near to the cottages in Google Maps <a target="_blank" href="https://www.google.com/maps/search/Hotels/@52.1323933,-1.0255085,12.68z/data=!4m6!2m5!5m3!5m2!1s2020-04-09!2i2!6e3">click here</a>.</p>
+            <p>If you would rather stay near the venue <a target="_blank" href="https://www.google.com/maps/place/Dodmoor+House/@52.2452768,-1.1174177,13.38z/data=!4m15!1m6!2m5!1sHotels!5m3!5m2!1s2020-04-09!2i2!3m7!1s0x0:0x5b02fd4a475112b7!5m2!1s2020-04-09!2i2!8m2!3d52.2418211!4d-1.085844">here is a map</a> with suggested hotels nearby.</p>
         </div>
-        <div class="plan-info-content"><h3>Alternative Hotels</h3>
-          <p>If you would rather stay elsewhere, we would suggest you stay near the cottages rather than the venue. That way it will be easier to join us on the Saturday.</p>
-          <p>To view alternative options near to the cottages in Google Maps <a target="_blank" href="https://www.google.com/maps/search/Hotels/@52.1323933,-1.0255085,12.68z/data=!4m6!2m5!5m3!5m2!1s2020-04-09!2i2!6e3">click here</a>.</p>
-          <p>If you would rather stay near the venue <a target="_blank" href="https://www.google.com/maps/place/Dodmoor+House/@52.2452768,-1.1174177,13.38z/data=!4m15!1m6!2m5!1sHotels!5m3!5m2!1s2020-04-09!2i2!3m7!1s0x0:0x5b02fd4a475112b7!5m2!1s2020-04-09!2i2!8m2!3d52.2418211!4d-1.085844">here is a map</a> with suggested hotels nearby.</p>
-          <h3>Illustrated Map</h3>
-          <p>The journey between Tove Valley Cottages and Dodmoor House takes about 20 mins by car, northbound along the A5.</p>
+        <div class="plan-info-content">
+          <h3>Map</h3>
+          <p>The journey between Tove Valley Cottages and Dodmoor House takes about 20 mins by car along the A5.</p>
           <img class="tove-dodmoor-maps" src="images/ToveDodmoorRoads.png">
-          <img class="tove-dodmoor-maps" src="images/ToveDodmoorKey.png">
+          <img id="tove-dodmoor-key" class="tove-dodmoor-maps" src="images/ToveDodmoorKey.png">
         </div>
       </div>
 
@@ -182,7 +183,7 @@
         <h2 class="section-titles">GIFTS</h2>
         <p class="sub-title-centred">We know everybody says this but there you go</p>
         <p>Your presence at our wedding is gift enough and we sincerely mean that.</p>
-        <p>If you do wish to buy us something, a contribution towards our dream honeymoon in South America would be appreciated.</p>
+        <p>If you do wish to get us something, a contribution towards our dream honeymoon in South America would be appreciated.</p>
         <p>Or possibly a cat. In fact, definitely a cat.</p>
       </div>
     </div>
@@ -195,24 +196,50 @@
   </div>
   </div>
   <div id="img-carousel-container">
-    <img src="images/MKoslo.jpeg" class="img-carousel">
-    <img src="images/MKsmart.jpeg" class="img-carousel">
-    <img src="images/Photo 09-02-2020, 18 02 38.jpg" class="img-carousel">
-    <img src="images/MKdears.jpeg" class="img-carousel">
-    <img src="images/MKOsloPrint.jpeg" class="img-carousel">
-    <img src="images/MKHJ.jpeg" class="img-carousel">
-    <img src="images/MKTD.jpeg" class="img-carousel">
-    <img src="images/MKwedding.jpeg" class="img-carousel">
-    <img src="images/MKNYE.jpeg" class="img-carousel">
+    <div id="img-carousel-wrapper">
+      <i id="carousel-previous" class="fa fa-chevron-left carousel-controls" aria-hidden="true"></i>
+      <i id="carousel-next" class="fa fa-chevron-right carousel-controls" aria-hidden="true"></i>
+    </div>
+    <div class="img-carousel-trio active">
+      <img src="images/MKdears.jpeg" class="img-carousel">
+      <img src="images/MKoslo.jpeg" class="img-carousel">
+      <img src="images/MKwedding.jpeg" class="img-carousel">
+    </div>
+    <div class="img-carousel-trio">
+      <img src="images/2MKPlates.jpeg" class="img-carousel">
+      <img src="images/2MKPeaks.jpeg" class="img-carousel">
+      <img src="images/2MKIndia.jpeg" class="img-carousel">
+    </div>
+    <div class="img-carousel-trio">
+      <img src="images/MKOsloPrint.jpeg" class="img-carousel">
+      <img src="images/MKHJ.jpeg" class="img-carousel">
+      <img src="images/Photo 09-02-2020, 18 02 38.jpg" class="img-carousel">
+    </div>
+    <div class="img-carousel-trio">
+      <img src="images/2MKShoreditch.jpeg" class="img-carousel">
+      <img src="images/2MKJos.jpeg" class="img-carousel">
+      <!-- <img src="images/2MKBucket.jpeg" class="img-carousel"> -->
+    </div>
+    <div class="img-carousel-trio">
+      <img src="images/2MKespresso.jpeg" class="img-carousel">
+      <img src="images/2MKGlasto.jpeg" class="img-carousel">
+      <img src="images/2MKBucket.jpeg" class="img-carousel">
+    </div>
+    <div class="img-carousel-trio">
+      <img src="images/MKTD.jpeg" class="img-carousel">
+      <img src="images/MKsmart.jpeg" class="img-carousel">
+      <img src="images/MKNYE.jpeg" class="img-carousel">
+    </div>
   </div>
   <footer>
     <p id="footer-content">Any questions, please just ask. I'm sure you have our numbers but you can also email <a href="mailto:karlandmiriam@aol.com?subject=Hello%20from">karlandmiriam@aol.com</a> to keep it official.</p>
   </footer>
 
-  <script src="https://use.fontawesome.com/bb06c15f21.js"></script>
+
   <script src="scripts/countdown.js"></script>
   <script src="scripts/modal.js"></script>
   <script src="scripts/ToveMap.js"></script>
+  <script src="scripts/carousel.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCocXfV9G1SlwTr33Lajk8lKqqXLWkkqEA&callback=initMap"></script>
   <script data-cfasync="false" type="text/javascript" src="scripts/form-submission-handler.js"></script>
   </body>
