@@ -1,7 +1,11 @@
 /// PREVIOUS BUTTON ///
 function carouselPrevious () {
   hideActive()
-  currentSlide -= 1
+  if (currentSlide <= 0) {
+    currentSlide = slides.length - 1
+  } else {
+    currentSlide -= 1
+  }
   showActive()
 }
 
@@ -10,7 +14,11 @@ document.getElementById('carousel-previous').onclick = carouselPrevious
 /// NEXT BUTTON ///
 function carouselNext () {
   hideActive()
-  currentSlide += 1
+  if (currentSlide >= slides.length - 1) {
+    currentSlide = 0
+  } else {
+    currentSlide += 1
+  }
   showActive()
 }
 
