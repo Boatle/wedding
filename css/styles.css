@@ -400,7 +400,7 @@ footer {
   min-height: 30px;
   background-color: #fff;
   box-shadow: 0 2px 20px rgba(26, 25, 52, 0.15);
-  z-index: 1000;
+  z-index: 2000;
   position: sticky;
   display: flex;
   flex-wrap: nowrap;
@@ -500,7 +500,7 @@ footer {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 30px 0 0 0;
+  margin: 24px 0 0 0;
 }
 
 .plan-time {
@@ -601,6 +601,7 @@ footer {
 }
 
 .service-icons {
+  width: 35px;
   margin-right: 20px;
 }
 
@@ -636,45 +637,6 @@ footer {
   margin: 0 6px 0 0;
 }
 
-.fa-bus.fa {
-  font-size: 30px;
-  color: #f2a587;
-}
-
-.fa-life-ring.fa {
-  font-size: 30px;
-  color: #f2a587;
-}
-
-.fa-cutlery.fa {
-  font-size: 27px;
-  color: #f2a587;
-}
-
-.fa-microphone.fa {
-  font-size: 30px;
-
-  color: #f2a587;
-}
-
-.fa-blind.fa {
-  font-size: 30px;
-
-  color: #f2a587;
-}
-
-.fa-music.fa {
-  font-size: 26px;
-
-  color: #f2a587;
-}
-
-.fa-ambulance.fa {
-  transform: scaleX(-1);
-  font-size: 28px;
-  color: #f2a587;
-}
-
 .fa-chevron-left.fa {
   font-size: 30px;
   color: #dde3e8;
@@ -689,7 +651,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  width: 66px;
   height: 60px;
   border: 2px solid #dde3e8;
   /* box-sizing: border-box; */
@@ -702,9 +664,11 @@ footer {
 }
 
 #carousel-previous {
+  padding-right: 5px;
 }
 
 #carousel-next {
+  padding-left: 5px;
 }
 
 
