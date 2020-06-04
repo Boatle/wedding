@@ -70,3 +70,15 @@ function showAddPersonButton() {
 }
 
 document.getElementById('remove-person-button').onclick = hideSecondPersonRow
+
+/// CHECKBOX VALUE ///
+function toggleCheckboxValue () {
+  const accomvalue = document.getElementById('accom')
+  if (accomvalue.value === "on") {
+      accomvalue.value = "off"
+  } else {
+    accomvalue.value = "on"
+  }
+}
+
+document.getElementById('accom').onclick = toggleCheckboxValue
