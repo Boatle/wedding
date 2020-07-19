@@ -148,6 +148,10 @@ input:focus {
   content: none;
 }
 
+#accom-row {
+  display: none;
+}
+
 .check-box-container input:checked ~ .checkbox-label:after {
   content: "";
 }
