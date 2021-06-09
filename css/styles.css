@@ -232,6 +232,7 @@ h1 {
   font-size: 31px;
   letter-spacing: 1px;
   margin: 0;
+  color: #232952;
 }
 
 #ampersand {
@@ -254,6 +255,7 @@ h3 {
   margin: 0;
   font-size: 20px;
   line-height: 30px;
+  color: #232952;
 }
 
 #h3-second {
@@ -264,7 +266,7 @@ h3 {
   padding: 15px;
   /* font-size: 26px; */
   /* line-height: 36px; */
-  color: white;
+  color: #232952;
   /* background: rgb(229 81 23 / 40%); */
   /* text-shadow: 0 2px 4px rgba(229, 81, 23, 0.5); */
   /* font-weight: 400; */
@@ -346,7 +348,7 @@ footer {
 
 .button-text-container {
   position: absolute;
-  /* top: 60px; */
+  top: 86px;
   width: 100%;
   text-align: center;
 }
